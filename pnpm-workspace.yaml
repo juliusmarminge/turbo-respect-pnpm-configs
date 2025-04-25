@@ -1,3 +1,10 @@
+# Prevent pnpm from adding the "workspace:"" prefix to local
+# packages as it casues issues with manypkg
+# @link https://pnpm.io/npmrc#prefer-workspace-packages
+saveWorkspaceProtocol: false
+preferWorkspacePackages: true
+linkWorkspacePackages: true
+
 packages:
   - "apps/*"
   - "packages/*"
